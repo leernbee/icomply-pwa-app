@@ -18,7 +18,7 @@ const pages = [
   {
     title: 'Coppebell App',
     icon: flash,
-    url: '/tabs/feed',
+    url: '/tabs/app',
   },
   {
     title: 'Settings',

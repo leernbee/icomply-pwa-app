@@ -4,14 +4,9 @@ import {
   IonToolbar,
   IonTitle,
   IonButtons,
-  IonButton,
-  IonIcon,
   IonContent,
   IonMenuButton,
 } from '@ionic/react';
-import Notifications from './Notifications';
-import { useState } from 'react';
-import { notificationsOutline } from 'ionicons/icons';
 import IframeResizer from 'iframe-resizer-react';
 
 const styleWebformIframeEmbed = {
@@ -21,8 +16,6 @@ const styleWebformIframeEmbed = {
 };
 
 const Feed = () => {
-  const [showNotifications, setShowNotifications] = useState(true);
-
   return (
     <IonPage>
       <IonHeader>
@@ -31,11 +24,6 @@ const Feed = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          {/* <IonButtons slot="end">
-            <IonButton onClick={() => setShowNotifications(true)}>
-              <IonIcon icon={notificationsOutline} />
-            </IonButton>
-          </IonButtons> */}
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding" fullscreen>
@@ -44,7 +32,6 @@ const Feed = () => {
             <IonTitle size="large">Feed</IonTitle>
           </IonToolbar>
         </IonHeader>
-        {/* <Notifications open={showNotifications} onDidDismiss={() => setShowNotifications(false)} /> */}
         <IframeResizer
         src="https://app.copperbell.co"
         title="Copperbell Web"
