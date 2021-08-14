@@ -12,18 +12,13 @@ import {
   IonToolbar,
 } from '@ionic/react';
 import { useEffect, useState } from 'react';
-import { cog, flash, list } from 'ionicons/icons';
+import { cog, flash } from 'ionicons/icons';
 
 const pages = [
   {
-    title: 'Feed',
+    title: 'Coppebell App',
     icon: flash,
     url: '/tabs/feed',
-  },
-  {
-    title: 'Lists',
-    icon: list,
-    url: '/tabs/lists',
   },
   {
     title: 'Settings',
