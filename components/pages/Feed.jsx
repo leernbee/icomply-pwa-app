@@ -26,7 +26,7 @@ const Feed = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding" fullscreen>
+      <IonContent className="ion-no-padding" fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Feed</IonTitle>
