@@ -1,11 +1,12 @@
 {
     "name": "Coppebell App",
     "short_name": "Coppebell",
-    "theme_color": "#ffffff",
+    "description": "It's the Copperbell PWA app",
+    "theme_color": "#333",
     "background_color": "#333",
     "display": "fullscreen",
     "orientation": "portrait",
-    "scope": "/",
+    "lang": "en",
     "start_url": "/",
     "icons": [
         {
@@ -48,6 +49,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "splash_pages": null
+    ]
 }

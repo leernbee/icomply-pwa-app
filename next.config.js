@@ -1,11 +1,7 @@
-const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
+const withWorkbox = require('next-with-workbox');
 
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-    register: true,
-    skipWaiting: true,
+module.exports = withWorkbox({
+  workbox: {
+    swSrc: 'worker.js',
   },
 });

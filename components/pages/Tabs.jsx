@@ -7,6 +7,21 @@ import Settings from './Settings';
 import News from './News';
 
 const Tabs = () => {
+  function showTab() {
+    const tabBar = document.getElementById('appTabBar');
+    if (tabBar !== null) {
+      console.log('enabled');
+      tabBar.style.display = 'flex';
+    }
+  }
+
+  function hideTab() {
+    const tabBar = document.getElementById('appTabBar');
+    if (tabBar !== null) {
+      tabBar.style.display = 'none';
+    }
+  }
+
   return (
     <IonTabs>
       <IonRouterOutlet>
@@ -15,7 +30,7 @@ const Tabs = () => {
         <Route path="/tabs/settings" component={Settings} exact={true} />
         <Route path="/tabs" render={() => <Redirect to="/tabs/app" />} exact={true} />
       </IonRouterOutlet>
-      <IonTabBar slot="bottom">
+      <IonTabBar slot="bottom" id="appTabBar">
         <IonTabButton tab="tab1" href="/tabs/app">
           <IonIcon icon={globeOutline} />
           <IonLabel>App</IonLabel>

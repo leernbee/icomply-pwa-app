@@ -1,19 +1,17 @@
-import {
-  IonPage,
-  IonContent,
-} from '@ionic/react';
+import { IonPage, IonContent } from '@ionic/react';
 import IframeResizer from 'iframe-resizer-react';
 
 const styleWebformIframeEmbed = {
   width: '1px',
+  height: '1px',
   minWidth: '100%',
-  height: '100%'
+  minHeight: '100%',
 };
 
 const App = () => {
   return (
     <IonPage>
-      <IonContent className="ion-no-padding" fullscreen>
+      <IonContent className="ion-no-padding">
         <IframeResizer
           src="https://app.copperbell.co"
           title="Copperbell Web"
