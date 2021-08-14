@@ -1,8 +1,8 @@
 {
-    "name": "Next.JS Progressive Web App",
-    "short_name": "Next PWA",
+    "name": "Coppebell App",
+    "short_name": "Coppebell",
     "theme_color": "#ffffff",
-    "background_color": "#004740",
+    "background_color": "#333",
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "/",
