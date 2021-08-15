@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         appId: 'ab6f6d29-5824-4b7e-a023-70767d69b25a',
         safari_web_id: '',
         notifyButton: {
-          enable: false,
+          enable: true,
         },
       });
     });

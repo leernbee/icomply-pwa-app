@@ -4,7 +4,7 @@
     "description": "It's the Copperbell PWA app",
     "theme_color": "#333",
     "background_color": "#333",
-    "display": "fullscreen",
+    "display": "minimal-ui",
     "orientation": "portrait",
     "lang": "en",
     "start_url": "/",
