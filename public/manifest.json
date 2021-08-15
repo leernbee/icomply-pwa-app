@@ -1,13 +1,14 @@
 {
     "name": "Copperbell App",
     "short_name": "Copperbell",
-    "description": "It's the Copperbell PWA app",
+    "description": "It's the Copperbell App",
     "theme_color": "#333",
     "background_color": "#333",
     "display": "minimal-ui",
     "orientation": "portrait",
     "lang": "en",
     "start_url": "/",
+    "scope": "/",
     "icons": [
         {
             "src": "icons/icon-72x72.png",
