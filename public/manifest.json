@@ -4,7 +4,7 @@
     "description": "It's the Copperbell App",
     "theme_color": "#333",
     "background_color": "#333",
-    "display": "minimal-ui",
+    "display": "standalone",
     "orientation": "portrait",
     "lang": "en",
     "start_url": "/",

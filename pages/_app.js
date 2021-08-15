@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
           slidedown: {
             enabled: true,
             autoPrompt: true,
-            timeDelay: 10,
+            timeDelay: 20,
             pageViews: 3,
           },
         },
@@ -36,7 +36,8 @@ function MyApp({ Component, pageProps }) {
       console.warn('Progressive Web App support is disabled');
       return;
     }
-    const wb = new Workbox('/sw.js');
+
+    const wb = new Workbox('/OneSignalSDKWorker.js');
     wb.register();
 
     return () => {
@@ -55,7 +56,6 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="description" content="Description" />
         <title>Copperbell</title>
-
         <link rel="manifest" href="/manifest.json" />
         <link href="/icons/icon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
         <link href="/icons/icon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
