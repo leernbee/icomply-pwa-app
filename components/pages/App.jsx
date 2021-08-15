@@ -8,7 +8,7 @@ const styleWebformIframeEmbed = {
   minHeight: '100%',
 };
 
-const url = 'https://app.copperbell.co';
+const url = 'https://web.copperbell.co';
 
 const App = () => {
   return (

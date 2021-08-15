@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 import 'tailwindcss/tailwind.css';
 import '@ionic/react/css/core.css';
@@ -17,12 +18,28 @@ import { Workbox } from 'workbox-window';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
+    window.OneSignal = window.OneSignal || [];
+
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: 'ab6f6d29-5824-4b7e-a023-70767d69b25a',
+        safari_web_id: '',
+        notifyButton: {
+          enable: false,
+        },
+      });
+    });
+
     if (!('serviceWorker' in navigator) || process.env.NODE_ENV !== 'production') {
       console.warn('Progressive Web App support is disabled');
       return;
     }
     const wb = new Workbox('/sw.js');
     wb.register();
+
+    return () => {
+      window.OneSignal = undefined;
+    };
   }, []);
 
   return (
@@ -42,6 +59,7 @@ function MyApp({ Component, pageProps }) {
         <link href="/icons/icon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon.png"></link>
         <meta name="theme-color" content="#333333" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
       </Head>
       <Component {...pageProps} />
     </>
