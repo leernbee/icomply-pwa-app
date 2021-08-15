@@ -8,16 +8,19 @@ const styleWebformIframeEmbed = {
   minHeight: '100%',
 };
 
+const url = 'https://app.copperbell.co';
+
 const App = () => {
   return (
     <IonPage>
       <IonContent className="ion-no-padding">
         <IframeResizer
-          src="https://app.copperbell.co"
+          src={url}
           title="Copperbell Web"
           frameBorder="0"
           allowFullScreen
           style={styleWebformIframeEmbed}
+          checkOrigin={false}
         />
       </IonContent>
     </IonPage>

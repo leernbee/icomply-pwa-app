@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from 'next/script';
 
 import 'tailwindcss/tailwind.css';
 import '@ionic/react/css/core.css';
@@ -22,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       console.warn('Progressive Web App support is disabled');
       return;
     }
-    const wb = new Workbox('sw.js', { scope: '/' });
+    const wb = new Workbox('/sw.js');
     wb.register();
   }, []);
 
@@ -45,7 +44,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#333333" />
       </Head>
       <Component {...pageProps} />
-      <Script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></Script>
     </>
   );
 }
