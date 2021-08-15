@@ -1,13 +1,6 @@
-import {
-  IonPage,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-} from '@ionic/react';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
 
 const Settings = () => {
-
   return (
     <IonPage>
       <IonHeader>
@@ -15,9 +8,7 @@ const Settings = () => {
           <IonTitle>Settings</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-
-      </IonContent>
+      <IonContent></IonContent>
     </IonPage>
   );
 };
