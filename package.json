@@ -13,21 +13,21 @@
     "firebase": "next build && next export && firebase deploy"
   },
   "dependencies": {
-    "@ionic/react": "^5.5.2",
-    "@ionic/react-router": "^5.5.2",
     "iframe-resizer-react": "^1.1.0",
     "next": "^11.0.0",
     "next-with-workbox": "^2.0.1",
     "react": "17.0.1",
+    "react-confirm-alert": "^2.7.0",
     "react-dom": "17.0.1",
     "react-router-dom": "^5.2.0",
+    "react-use-a2hs": "^0.0.2",
     "workbox-precaching": "^6.2.4",
     "workbox-window": "^6.2.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.6",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
-    "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5"
   }
 }
