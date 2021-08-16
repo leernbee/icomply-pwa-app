@@ -24,7 +24,7 @@ const App = () => {
           buttons: [
             {
               label: 'Yes',
-              onClick: () => promptToInstall,
+              onClick: promptToInstall,
             },
             {
               label: 'No',
