@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-tailwind-capacitor",
+  "name": "icomply-pwa",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -9,8 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "firebase": "next build && next export && firebase deploy"
+    "export": "next export"
   },
   "dependencies": {
     "iframe-resizer-react": "^1.1.0",
