@@ -1,7 +1,7 @@
 {
-    "name": "Copperbell App",
-    "short_name": "Copperbell",
-    "description": "It's the Copperbell App",
+    "name": "iComply",
+    "short_name": "iComply",
+    "description": "It's the iComply App",
     "theme_color": "#EBE2D6",
     "background_color": "#EBE2D6",
     "display": "standalone",

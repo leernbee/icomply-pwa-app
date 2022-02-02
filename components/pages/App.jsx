@@ -9,8 +9,8 @@ const App = () => {
   return (
     <>
       <IframeResizer
-        src="https://web.copperbell.co"
-        title="App - Copperbell"
+        src="https://pw13mlsb.icomply.business"
+        title="App - iComply"
         frameBorder="0"
         allowFullScreen
         style={{ width: '1px', height: '1px', minWidth: '100%', minHeight: '100%' }}
@@ -19,8 +19,8 @@ const App = () => {
       />
       {promptEvent &&
         confirmAlert({
-          title: 'Install Copperbell',
-          message: 'Add Copperbell to Home screen',
+          title: 'Install iComply',
+          message: 'Add iComply to Home screen',
           buttons: [
             {
               label: 'Yes',
