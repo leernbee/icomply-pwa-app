@@ -57,9 +57,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Description" />
         <title>A Powerful Regulatory Management Suite - iComply</title>
         <link rel="manifest" href="/manifest.json" />
-        <link href="/icons/icon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
-        <link href="/icons/icon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/icons/apple-touch-icon-180x180.png"></link>
+        <link href="/icons/icon-48x48.png" rel="icon" type="image/png" sizes="48x48" />
+        <link rel="apple-touch-icon" href="/icons/icon-152x152.png"></link>
         <meta name="theme-color" content="#7C6A54" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
       </Head>
