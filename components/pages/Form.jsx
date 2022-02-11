@@ -12,7 +12,7 @@ const Form = () => {
   return (
     <>
       <IframeResizer
-        src={`https://pw13mlsb.icomply.business/p/form/${fid}`}
+        src={`https://pw13mlsb.icomply.ph/p/form/${fid}`}
         title="App - iComply"
         frameBorder="0"
         allowFullScreen

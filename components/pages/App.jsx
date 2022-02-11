@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <IframeResizer
-        src="https://pw13mlsb.icomply.business"
+        src="https://pw13mlsb.icomply.ph"
         title="App - iComply"
         frameBorder="0"
         allowFullScreen

@@ -9,7 +9,7 @@ const Signup = () => {
   return (
     <>
       <IframeResizer
-        src="https://pw13mlsb.icomply.business/signup"
+        src="https://pw13mlsb.icomply.ph/signup"
         title="Sign Up - iComply"
         frameBorder="0"
         allowFullScreen
