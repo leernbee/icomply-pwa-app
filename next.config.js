@@ -1,7 +1,8 @@
-const withWorkbox = require('next-with-workbox');
-
-module.exports = withWorkbox({
-  workbox: {
-    swSrc: 'worker.js',
+const withPWA = require('next-pwa');
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
   },
 });
